@@ -1,0 +1,83 @@
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+.input-container {
+  display: flex;
+  justify-content: space-between;
+
+
+.my-input {
+  flex: 1;
+  padding: 15px 25px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  border: none;
+  background-color: rgb(238, 238, 238);
+  outline: none;
+  font-size: 20px;
+  border: 2px solid rgb(238, 238, 238);
+  transition: 0.5s;
+  &:focus {
+    border: 2px solid #65bbf5;
+  }
+}
+}
+
+
+.btn {
+  font-size: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  border: none;
+  background-color: #65bbf5;
+  color: white;
+  width: 100px;
+  cursor: pointer;
+}
+
+
+
+
+.todos {
+  margin-top: 20px;
+  .todo {
+    display: flex;
+    border: 2px solid rgb(238, 238, 238);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    padding: 0 10px;
+    transition: 0.5s;
+    &:hover {
+      box-shadow: 0 5px 10px rgba(128, 128, 128, 0.26);
+      transform: scale(1.02);
+    }
+    button {
+      color: white;
+      border: none;
+      border-radius: 100px;
+      margin: 10px 0;
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+    .edit {
+      background-color:#65bbf5;
+      margin-right: 5px;
+    }
+    .delete {
+      background-color: rgb(255, 0, 43);
+    }
+  }
+}
